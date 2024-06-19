@@ -6,6 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `deploy to GitHub Pages`
+Run `npm run deploy`. Check [https://github.com/gitname/react-gh-pages](https://github.com/gitname/react-gh-pages).
+
 ### `npm start`
 
 Runs the app in the development mode.\
