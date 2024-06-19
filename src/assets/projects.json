@@ -1,0 +1,55 @@
+[
+    {
+        "title": "Reduce the Foreign Accent in your English Speech",
+        "tags": [
+            "PyTorch",
+            "Flask",
+            "Python",
+            "Vue",
+            "Node.js",
+            "GCP"
+        ],
+        "description": "A web application that helps users reduce their foreign accent in English speech. The application uses machine learning to analyze the user's speech and provide feedback on how to improve their pronunciation.",
+        "pic_name": "Proj1",
+        "links": {
+            "GitHub": "abc.com"
+        }
+    },
+    {
+        "title": "Document Rectification using Deep Learning",
+        "tags": [
+            "PyTorch",
+            "PyOpenGL",
+            "Python"
+        ],
+        "description": "Rectify distorted documents using deep learning. The application uses a convolutional neural network to detect and correct distortions in scanned documents.",
+        "pic_name": "Proj2",
+        "links": {}
+    },
+    {
+        "title": "Prompt Enhancer",
+        "tags": [
+            "React",
+            "Node.js"
+        ],
+        "description": "A web application that helps users improve their writing by suggesting better ways to phrase their sentences. The application uses a large language model to generate alternative phrasings for the user's input.",
+        "pic_name": "Proj3"
+    },
+    {
+        "title": "Anime Face Generation",
+        "tags": [
+            "PyTorch",
+            "Python"
+        ],
+        "description": "Generate anime faces using a generative adversarial network. The application uses a GAN to create new anime faces based on a dataset of existing images.",
+        "pic_name": "Proj4"
+    },
+    {
+        "title": "COVID Data Explorer",
+        "tags": [
+            "Java"
+        ],
+        "description": "An desktop application that allows users to explore COVID-19 data from around the world. The application provides visualizations of case counts, deaths, and vaccination rates for different countries.",
+        "pic_name": "Proj5"
+    }
+]

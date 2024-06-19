@@ -1,0 +1,35 @@
+{
+    "background": [
+        "Hi there! I'm Aidan, a motivated software developer passionate about software engineering and machine learning. I built projects relevant to these two fields in both academic and industrial settings while acquiring a solid Computer Science foundation at the Hong Kong University of Science and Technology and the University of Waterloo.",
+        "The invaluable hands-on experiences shaped me into a proficient developer capable of writing clean code for sophisticated systems while adhering to standards and best practices. Alongside my technical expertise, I possess exceptional interpersonal skills, fostering seamless collaboration with engineering teams.",
+        "Aspiring to shape the future with technology, I look forward to every opportunity to implement innovative ideas into real-world solutions. Let's embark on an exciting tech adventure together!"
+    ],
+    "skills": {
+        "Programming Languages": [
+            {"title": "Python", "icon_url": "../public/logo192.png"},
+            {"title": "C++", "icon_url": "./public/logo192.png"},
+            {"title": "Java", "icon_url": "../public/logo192.png"},
+            {"title": "JavaScript", "icon_url": "../public/logo192.png"},
+            {"title": "TypeScript", "icon_url": "../public/logo192.png"},
+            {"title": "SQL", "icon_url": "../public/logo192.png"},
+            {"title": "HTML"},
+            {"title": "CSS", "icon_url": "../public/logo192.png"},
+            {"title": "Matlab", "icon_url": "../public/logo192.png"},
+            {"title": "R", "icon_url": "../public/logo192.png"}
+        ],
+        "Web Development": [
+            {"title": "React", "icon_url": "../public/logo192.png"},
+            {"title": "Express", "icon_url": "../public/logo192.png"},
+            {"title": "Node", "icon_url": "../public/logo192.png"},
+            {"title": "PostgreSQL", "icon_url": "../public/logo192.png"},
+            {"title": "MongoDB", "icon_url": "../public/logo192.png"}
+        ],
+        "Machine Learning": [
+            {"title": "PyTorch", "icon_url": ""},
+            {"title": "NumPy", "icon_url": "../public/logo192.png"},
+            {"title": "Pandas", "icon_url": "../public/logo192.png"},
+            {"title": "Matplotlib", "icon_url": "../public/logo192.png"},
+            {"title": "Tensorboard", "icon_url": "../public/logo192.png"}
+        ]
+    }
+}

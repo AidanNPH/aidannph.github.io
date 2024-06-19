@@ -1,0 +1,63 @@
+.projectIntro {
+    margin-top: max(1vw, 1vh);
+    display: flex;
+    flex-direction: row;
+    border: 0.5px solid lightblue;
+    border-radius: 20px;
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        background-color: lightcyan;
+        border-radius: 20px 0 0 20px;
+        padding: 10px;
+        width: 60%;
+
+        h3 {
+            padding: 2%;
+        }
+    
+        .details {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .tags {
+                display: flex;
+                flex-wrap: wrap;
+                span {
+                    background-color: lightblue;
+                    border-radius: 10px;
+                    padding: 1%;
+                    margin: 1%;
+                }
+            }
+
+            .description {
+                padding: 1% 2%;
+            }
+        }
+    }
+
+    img {
+        width: 40%;
+        border-radius: 0 20px 20px 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .projectIntro {
+        flex-direction: column-reverse;
+
+        .info {
+            width: 100%;
+            border-radius: 0 0 20px 20px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 20px 20px 0 0;
+        }
+    }
+    
+}
