@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import projects from './assets/projects.json';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import SkillIcon from './components/SkillIcon';
 
 const App = () => {
   return (
@@ -18,6 +19,9 @@ const App = () => {
               <Intro />
               <About />
               <Projects />
+              <div className='test'>
+                <SkillIcon />
+              </div>
             </div>
           } />
           {projects.map((proj, i) => <Route key={proj.title} path={`/projects/${proj.title.replaceAll(' ', '').toLowerCase()}`} element={<p>{proj.title}</p>} />)}
