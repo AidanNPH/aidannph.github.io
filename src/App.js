@@ -2,6 +2,7 @@ import Navbar from './components/Navbar';
 import Intro from './pages/Intro';
 import About from './pages/About';
 import Projects from './pages/Projects';
+import Project from './pages/Project';
 import Footer from './components/Footer';
 import projects from './assets/projects.json';
 import './App.css';
@@ -22,8 +23,17 @@ const App = () => {
               {/* <SkillIcon path='../assets/svg/c.svg' /> */}
             </div>
           } />
-          {projects.map((proj, i) => <Route key={proj.title} path={`/projects/${proj.title.replaceAll(' ', '').toLowerCase()}`} element={<p>{proj.title}</p>} />)}
-          <Route path='*' element={<p>Not Found</p>} />
+          {projects.map((proj, i) => <Route 
+              key={proj.title}
+              path={`/projects/${proj.title.replaceAll(' ', '')}`}
+              element={<div className='content'>
+                <Project title={proj.title.replaceAll(" ", "")} />
+                </div>} 
+            />
+          )}
+          <Route path='*' element={<div className='content'>
+              <h2 style={{'paddingBottom': '5vh'}}>Page Not Found</h2>
+            </div>} />
         </Routes>
         <Footer />
       </div>

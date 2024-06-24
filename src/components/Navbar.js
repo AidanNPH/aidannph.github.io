@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import styles from './Navbar.module.css';
 
 const Scroller = ({ targetId, offset, children }) => {
@@ -55,6 +55,7 @@ const Navbar = () => {
     const [sideMargin, setSideMargin] = useState(SIDE_MARGIN_INIT);
     const [width, setWidth] = useState(100 - 2 * SIDE_MARGIN_INIT);
     const [height, setHeight] = useState(TOP_MARGIN_INIT + 6.5);
+    const { pathname } = useLocation();
     
     const onScroll = () => {
         const endTransitionY = 150;
@@ -109,7 +110,7 @@ const Navbar = () => {
                     <li key={i} onClick={toggleFalse}>
                         {/* <Scroller id={item.link} offset={height}> */}
                         <Scroller targetId={item.link} offset={height/100}>
-                        <Link className={`${styles.navLink}`}>{item.name}</Link>
+                        <Link className={`${styles.navLink}`} to='/'>{item.name}</Link>
                         </Scroller>
                     </li>
                 ))}

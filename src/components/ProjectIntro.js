@@ -1,9 +1,34 @@
+import { useState, useEffect } from 'react';
 import images from '../assets/images';
 import styles from './ProjectIntro.module.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const ProjectIntro = ({proj}) => {
-    return <div className={styles.projectIntro}>
+    const notHoverColor = "rgb(240, 240, 240)";
+    const hoverColor = "rgb(30, 80, 190)";
+    const [hovering, setHovering] = useState(false);
+    const [borderColor, setBorderColor] = useState(notHoverColor);
+    const [cursor, setCursor] = useState("default");
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        setBorderColor(hovering ? hoverColor : notHoverColor);
+        setCursor(hovering ? "pointer" : "default");
+    }, [hovering]);
+
+    const handleClick = () => {
+        navigate(`/projects/${proj.title.replaceAll(" ", "")}`);
+    };
+
+    return <div className={styles.projectIntro} 
+            onClick={handleClick}
+            onMouseEnter={() => { setHovering(true); }}
+            onMouseLeave={() => { setHovering(false); }}
+            style={{
+                "borderColor": borderColor,
+                "cursor": cursor
+            }}
+        >
         <div className={styles.info}>
             <h3>{proj.title}</h3>
             <div className={styles.details}>

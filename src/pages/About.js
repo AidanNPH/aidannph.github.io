@@ -6,7 +6,7 @@ const About = () => {
     return (
         <div id="about" className={`${styles.section} ${styles.about}`}>
             <h2>About</h2>
-            {content.background.map((item, i) => <><p key={i}>{item}</p><br /></>)}
+            {content.background.map((item, i) => <div key={i}><p>{item}</p><br /></div>)}
             {/* <span>{content.background}</span> */}
             <h3>Skills</h3>
             <div className={styles.skills}>
