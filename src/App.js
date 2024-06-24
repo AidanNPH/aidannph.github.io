@@ -19,9 +19,7 @@ const App = () => {
               <Intro />
               <About />
               <Projects />
-              <div className='test'>
-                <SkillIcon />
-              </div>
+              {/* <SkillIcon path='../assets/svg/c.svg' /> */}
             </div>
           } />
           {projects.map((proj, i) => <Route key={proj.title} path={`/projects/${proj.title.replaceAll(' ', '').toLowerCase()}`} element={<p>{proj.title}</p>} />)}
