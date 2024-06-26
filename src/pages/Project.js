@@ -1,21 +1,21 @@
-import AnimeFaceGeneration from "./projects/AnimeFaceGeneration";
-import COVIDDataExplorer from "./projects/COVIDDataExplorer";
-import DocumentRectificationusingDeepLearning from "./projects/DocumentRectificationusingDeepLearning";
-import PromptEnhancer from "./projects/PromptEnhancer";
-import ReducetheForeignAccentinyourEnglishSpeech from "./projects/ReducetheForeignAccentinyourEnglishSpeech";
+import GeneratingAnimeCharacterFaceswithStyleGAN2 from "./projects/GeneratingAnimeCharacterFaceswithStyleGAN2";
+import DataExploreronCOVID19 from "./projects/DataExploreronCOVID19";
+import DistortedDocumentImageRectificationusingDeepLearning from "./projects/DistortedDocumentImageRectificationusingDeepLearning";
+import PromptEnhancementforAITools from "./projects/PromptEnhancementforAITools";
+import ReducetheForeignAccentfromyourEnglishSpeech from "./projects/ReducetheForeignAccentfromyourEnglishSpeech";
 
 const Project = ({title}) => {
     switch (title) {
-        case 'AnimeFaceGeneration':
-            return <AnimeFaceGeneration />;
-        case 'COVIDDataExplorer':
-            return <COVIDDataExplorer />;
-        case 'DocumentRectificationusingDeepLearning':
-            return <DocumentRectificationusingDeepLearning />;
-        case 'PromptEnhancer':
-            return <PromptEnhancer />;
-        case 'ReducetheForeignAccentinyourEnglishSpeech':
-            return <ReducetheForeignAccentinyourEnglishSpeech />;
+        case 'GeneratingAnimeCharacterFaceswithStyleGAN2':
+            return <GeneratingAnimeCharacterFaceswithStyleGAN2 />;
+        case 'DataExploreronCOVID19':
+            return <DataExploreronCOVID19 />;
+        case 'DistortedDocumentImageRectificationusingDeepLearning':
+            return <DistortedDocumentImageRectificationusingDeepLearning />;
+        case 'PromptEnhancementforAITools':
+            return <PromptEnhancementforAITools />;
+        case 'ReducetheForeignAccentfromyourEnglishSpeech':
+            return <ReducetheForeignAccentfromyourEnglishSpeech />;
         default:
             return <h2 style={{'paddingBottom': '5vh'}}>Project Not Found</h2>;
     }

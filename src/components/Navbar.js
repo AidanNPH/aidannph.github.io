@@ -1,9 +1,14 @@
 import { useEffect, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import styles from './Navbar.module.css';
 
 const Scroller = ({ targetId, offset, children }) => {
+    const {pathname} = useLocation();
+    const navigate = useNavigate();
+
     const handleClick = () => {
+        if (pathname !== '/') navigate('/');
+
         if (targetId === '#intro') {
             window.scrollTo({
                 top: 0,
@@ -13,8 +18,6 @@ const Scroller = ({ targetId, offset, children }) => {
         }
 
         const target = document.querySelector(targetId);
-
-        // console.log(target.getBoundingClientRect().top)
 
         if (target) {
             const targetPos = target.getBoundingClientRect().top - document.body.getBoundingClientRect().top;
@@ -110,7 +113,7 @@ const Navbar = () => {
                     <li key={i} onClick={toggleFalse}>
                         {/* <Scroller id={item.link} offset={height}> */}
                         <Scroller targetId={item.link} offset={height/100}>
-                        <Link className={`${styles.navLink}`} to='/'>{item.name}</Link>
+                            <span className={`${styles.navLink}`}>{item.name}</span>
                         </Scroller>
                     </li>
                 ))}

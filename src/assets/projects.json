@@ -1,6 +1,6 @@
 [
     {
-        "title": "Reduce the Foreign Accent in your English Speech",
+        "title": "Reduce the Foreign Accent from your English Speech",
         "tags": [
             "PyTorch",
             "Flask",
@@ -9,47 +9,47 @@
             "Node.js",
             "GCP"
         ],
-        "description": "A web application that helps users reduce their foreign accent in English speech. The application uses machine learning to analyze the user's speech and provide feedback on how to improve their pronunciation.",
+        "description": "A web application that leverages machine learning to help users reduce their foreign accents in English speech. Examples of use cases include pronunciation training and improving video voice-over with a native accent.",
         "pic_name": "Proj1",
         "links": {
             "GitHub": "abc.com"
         }
     },
     {
-        "title": "Document Rectification using Deep Learning",
+        "title": "Distorted Document Image Rectification using Deep Learning",
         "tags": [
             "PyTorch",
             "PyOpenGL",
             "Python"
         ],
-        "description": "Rectify distorted documents using deep learning. The application uses a convolutional neural network to detect and correct distortions in scanned documents.",
+        "description": "A project that leverages deep learning with traditional geometric techniques to rectify images of distorted documents. The application aims to enhance document scanning using mobile devices by enabling automatic rectification of rather complex distortions.",
         "pic_name": "Proj2",
         "links": {}
     },
     {
-        "title": "Prompt Enhancer",
+        "title": "Prompt Enhancement for AI Tools",
         "tags": [
             "React",
             "Node.js"
         ],
-        "description": "A web application that helps users improve their writing by suggesting better ways to phrase their sentences. The application uses a large language model to generate alternative phrasings for the user's input.",
+        "description": "A web application that utilizes prompt engineering techniques to help users produce more detailed prompts for image generation. The purpose is to assist users in turning vague wordings into expressive descriptions so that they can generate the exact pictures in their minds effortlessly.",
         "pic_name": "Proj3"
     },
     {
-        "title": "Anime Face Generation",
+        "title": "Generating Anime Character Faces with StyleGAN2",
         "tags": [
             "PyTorch",
             "Python"
         ],
-        "description": "Generate anime faces using a generative adversarial network. The application uses a GAN to create new anime faces based on a dataset of existing images.",
+        "description": "A program that generates anime faces randomly. It also involves a novel approach to control facial attributes of the output, such as hair color and hairstyle, by selecting example outputs with the desired features. The goal is to help artists brainstorm and gain inspiration during character design.",
         "pic_name": "Proj4"
     },
     {
-        "title": "COVID Data Explorer",
+        "title": "Data Explorer on COVID19",
         "tags": [
             "Java"
         ],
-        "description": "An desktop application that allows users to explore COVID-19 data from around the world. The application provides visualizations of case counts, deaths, and vaccination rates for different countries.",
+        "description": "A desktop application that visualizes data related to COVID-19 data, such as case counts, deaths, and vaccination rates, from around the world using various forms, such as graphs and tables. The application aims to provide an insightful and informative presentation of COVID-19 data.",
         "pic_name": "Proj5"
     }
 ]

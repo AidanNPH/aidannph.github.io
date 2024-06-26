@@ -13,15 +13,16 @@ const ProjectIntro = ({proj}) => {
 
     useEffect(() => {
         setBorderColor(hovering ? hoverColor : notHoverColor);
-        setCursor(hovering ? "pointer" : "default");
+        // setCursor(hovering ? "pointer" : "default");
     }, [hovering]);
 
     const handleClick = () => {
         navigate(`/projects/${proj.title.replaceAll(" ", "")}`);
+        window.scrollTo({ top: 0, behavior: 'instant' });
     };
 
     return <div className={styles.projectIntro} 
-            onClick={handleClick}
+            // onClick={handleClick}
             onMouseEnter={() => { setHovering(true); }}
             onMouseLeave={() => { setHovering(false); }}
             style={{
