@@ -13,7 +13,7 @@ const ProjectIntro = ({proj}) => {
 
     useEffect(() => {
         setBorderColor(hovering ? hoverColor : notHoverColor);
-        // setCursor(hovering ? "pointer" : "default");
+        setCursor(hovering ? "pointer" : "default");
     }, [hovering]);
 
     const handleClick = () => {
@@ -22,7 +22,7 @@ const ProjectIntro = ({proj}) => {
     };
 
     return <div className={styles.projectIntro} 
-            // onClick={handleClick}
+            onClick={handleClick}
             onMouseEnter={() => { setHovering(true); }}
             onMouseLeave={() => { setHovering(false); }}
             style={{

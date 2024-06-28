@@ -23,14 +23,14 @@ const App = () => {
               {/* <SkillIcon path='../assets/svg/c.svg' /> */}
             </div>
           } />
-          {/* {projects.map((proj, i) => <Route 
+          {projects.map((proj, i) => <Route 
               key={proj.title}
               path={`/projects/${proj.title.replaceAll(' ', '')}`}
               element={<div className='content'>
                 <Project title={proj.title.replaceAll(" ", "")} />
                 </div>} 
             />
-          )} */}
+          )}
           <Route path='*' element={<div className='content'>
               <h2 style={{'paddingBottom': '5vh'}}>Page Not Found</h2>
             </div>} />

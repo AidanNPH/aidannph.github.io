@@ -2,11 +2,20 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## TODOs
+
+- Add project details
+- Change to svg format
+- Change color scheme
+- Fix navbar
+- Refactor
+
 ## Available Scripts
 
 In the project directory, you can run:
 
 ### `deploy to GitHub Pages`
+
 Run `npm run deploy`. Check [https://github.com/gitname/react-gh-pages](https://github.com/gitname/react-gh-pages).
 
 ### `npm start`
